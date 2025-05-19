@@ -29,9 +29,9 @@ public class IACharacterVehiculoZombie : IACharacterVehiculo
     {
         base.MoveToAllied( );
     }
-    public override void MoveToEvadEnemy()
+    public override void MoveToEvadeEnemy()
     {
-        base.MoveToEvadEnemy( );
+        base.MoveToEvadeEnemy( );
     }
 
 }

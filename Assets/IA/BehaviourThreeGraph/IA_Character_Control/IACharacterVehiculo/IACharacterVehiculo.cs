@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IACharacterVehiculo : IACharacterControl
+public partial class IACharacterVehiculo : IACharacterControl
 {
     protected CalculateDiffuse _CalculateDiffuse;
     protected float speedRotation = 0;
@@ -63,7 +63,7 @@ public class IACharacterVehiculo : IACharacterControl
         if (AIEye.ViewAllie == null) return;
         MoveToPosition(AIEye.ViewAllie.transform.position);
     }
-    public virtual void MoveToEvadEnemy()
+    public virtual void MoveToEvadeEnemy()
     {
         if (AIEye.ViewEnemy == null) return;
         Vector3 dir = (transform.position - AIEye.ViewEnemy.transform.position).normalized;
@@ -98,4 +98,5 @@ public class IACharacterVehiculo : IACharacterControl
 
         MoveToPosition(positionWander);
     }
+
 }

@@ -8,6 +8,7 @@ public enum UnitGame
 {
     Zombie,
     Soldier,
+    Guard,
     None
 }
 public class Health : MonoBehaviour

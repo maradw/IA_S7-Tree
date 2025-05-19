@@ -29,9 +29,9 @@ public class IACharacterVehiculoSoldier : IACharacterVehiculo
     {
         base.MoveToAllied( );
     }
-    public override void MoveToEvadEnemy()
+    public override void MoveToEvadeEnemy()
     {
-        base.MoveToEvadEnemy( );
+        base.MoveToEvadeEnemy( );
     }
     public void MoveToStrategy()
     {
